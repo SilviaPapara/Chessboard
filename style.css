@@ -1,0 +1,22 @@
+:root {
+  --board: 536px;
+  --square: calc(var(--board) / 8);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.chessboard {
+  display: flex;
+  flex-wrap: wrap;
+  height: var(--board);
+  width: var(--board);
+  border: 2px solid black;
+}
+
+.chessboard div {
+  width: var(--square);
+  height: var(--square);
+}
